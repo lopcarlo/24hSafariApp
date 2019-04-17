@@ -52,6 +52,11 @@
      border: 2px solid red;
  }
 
+.packs > .packTitle {
+    font-size: 24px;
+    display: block;
+}
+
  .right {
      float: right;
      margin-left: 20%
