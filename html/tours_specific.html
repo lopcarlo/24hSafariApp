@@ -9,13 +9,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/tours_specific.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
-    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>    </script>
     <script src="tours_scpecific.js"></script>
 
 </head>
 
 <body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tours
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tanzania</a>
+                <a href="#">Quenia</a>
+            </div>
+        </div>
+
+        <a href="html/about.html">About Us</a>
+    </div>
+
     <div id="map_itinerary">
         <img id="map-itinerary-img" src="../resources/tours_specific/tours.jpg" alt="tours">
         <ol id="map-itinerary-list"></ol>
