@@ -26,9 +26,9 @@
     z-index: 9999999999;
  }
 
- #test {
+ #footer {
      width: 100%;
-    height: 500px;
+    height: 100px;
     background-color: red;
  }
 
@@ -38,23 +38,45 @@
      top: 200px;
      min-width: 400px;
      width: 25%;
-     height: 600px;
      background-color: green;
      padding: 15px;
      z-index: 9999;
  }
 
  .info>.packs {
+     position: relative;
      display: inline-block;
      margin: auto;
      width: 49%;
-     height: 250px;;
      border: 2px solid red;
  }
 
 .packs > .packTitle {
     font-size: 24px;
     display: block;
+}
+.packTitle > p{
+    text-align: center;
+    display: block;
+}
+
+.packInfo {
+    display: block;
+}
+
+.more {
+    position: relative;
+    display: flex;
+    clear: both;
+    display: block;
+    padding: 10px 0px;
+    background-color: blue;
+}
+
+.more > a {
+    display: inline-block;
+    width: 49%;
+    line-height: 100%;
 }
 
  .right {
