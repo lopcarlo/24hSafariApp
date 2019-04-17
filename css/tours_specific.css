@@ -1,1 +1,33 @@
+ #map-itinerary-img {
+    height: 400px;
+    float: left;
+    margin: auto;
+    padding: 30px;
+ }
+
+ #map-itinerary-list {
+     padding: 30px;
+ }
+
+ #itinerary-description {
+     clear: both;
+     padding: 30px;
+     text-align: justify;
+ }
+
+ .col {
+    display: inline-block;
+    width: 47,5%;
+    padding-bottom: 30px;
+    text-align: justify; 
+}
  
+ #col-image {
+    width: 100%
+ }
+
+ .col-middle {
+    width: 5%;
+    background-color: aqua;
+    display: inline-block;
+ }
