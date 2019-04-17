@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="contact.css">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -18,6 +19,72 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tours
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tanzania</a>
+                <a href="#">Quenia</a>
+            </div>
+        </div>
+        <a href="./about.html">About Us</a>
+
+        <a href="./contact.html">Contact</a>
+    </div>
+
+
+    <header class="ccheader">
+            <h1>Contact US</h1>
+        </header>
+
+
+   
+
+
+    <div class="wrapper">
+        <form method="post" action="mailto:lopcarlo@gmail.com" class="ccform">
+            <div class="ccfield-prepend">
+                <span class="ccform-addon">
+                    <i class="fa fa-user fa-2x"></i>
+                </span>
+                <input class="ccformfield" type="text" placeholder="Full Name" required>
+            </div>
+            <div class="ccfield-prepend">
+                <span class="ccform-addon">
+                    <i class="fa fa-envelope fa-2x"></i>
+                </span>
+                <input class="ccformfield" type="text" placeholder="Email" required>
+            </div>
+            <div class="ccfield-prepend">
+                <span class="ccform-addon">
+                    <i class="fa fa-mobile-phone fa-2x"></i>
+                </span>
+                <input class="ccformfield" type="text" placeholder="Phone">
+            </div>
+            <div class="ccfield-prepend">
+                <span class="ccform-addon">
+                    <i class="fa fa-info fa-2x"></i>
+                </span>
+                <input class="ccformfield" type="text" placeholder="Subject" required>
+            </div>
+            <div class="ccfield-prepend">
+                <span class="ccform-addon">
+                    <i class="fa fa-comment fa-2x"></i>
+                </span>
+                <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+            </div>
+            <div class="ccfield-prepend">
+                <input class="ccbtn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div class="credit">
+        <p>HAKUNA MATATA
+        </p>
+    </div>
 
 </body>
 
