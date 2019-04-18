@@ -147,7 +147,26 @@ $(document).ready(function () {
     var price;
     
 
+    
+
+    /*flight_type_custom.forEach(element => {
+        console.log("description" + element.description);
+        console.log("flight:" + customPackage.flight);
+        if(element.description === customPackage.flight){
+            console.log("teste2");
+        }
+    });*/
+    /*if(customPackage.flight === flight_type_custom.description){
+        console.log("teste");
+        price = flight_type_custom.price;
+        console.log(flight_type_custom[0].price);
+    }*/
+
+
+
+
     $("#step2").on("click", function(event) {
+        console.log($("#menu-country").val());
         customPackage = {
             country: $("#menu-country").val(),
             flight: $("#menu-flight").val(),
@@ -158,36 +177,9 @@ $(document).ready(function () {
         console.log(customPackage);
     }) 
 
-    flight_type_custom.forEach(element => {
-        console.log("description" + element.description);
-        console.log("flight:" + customPackage.flight);
-        if(element.description === customPackage.flight){
-            console.log("teste2");
-        }
-    });
-    if(customPackage.flight === flight_type_custom.description){
+    if($("#menu-country").val() === Kenya){
         console.log("teste");
-        price = flight_type_custom.price;
-        console.log(flight_type_custom[0].price);
     }
-
-
-
-    /*localStorage.setItem("custom_package", JSON.stringify(customPackage));
-    var custom = JSON.parse(localStorage.getItem("custom_package"));
-    console.log("object" + custom.flight);*/
-
-
-    /*flight_type_custom.forEach(element => {
-
-        console.log(customPackage.flight);
-        console.log(element.description);
-        if (element.description === customPackage.flight){
-            console.log(element.description);
-        }
-    });*/
-
-
     
 
 
