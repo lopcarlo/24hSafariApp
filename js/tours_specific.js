@@ -269,4 +269,9 @@ localStorage.setItem("pack_premium_tanzania", JSON.stringify(pack_premium_tanzan
 localStorage.setItem("pack_basic_quenia", JSON.stringify(pack_basic_quenia));
 localStorage.setItem("pack_premium_quenia", JSON.stringify(pack_premium_quenia));
 
+$("#button").on("click", () => {
+    var currentPack = JSON.parse(localStorage.getItem("pack_basic_tanzania"));
+    localStorage.setItem("currentPack", currentPack);
 })
+})
+

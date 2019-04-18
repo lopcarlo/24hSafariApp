@@ -8,38 +8,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="about.css">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>    </script>
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="about.js"></script>
 
 </head>
 
 <body>
-    <h1>WHO WE ARE:</h1>
+
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tours
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tanzania</a>
+                <a href="#">Quenia</a>
+            </div>
+        </div>
+        <a href="html/about.html">About Us</a>
+
+        <a href="/html/contact.html">Contact</a>
+    </div>
+
+   <div class="title">
+       <h1>WHO WE ARE:</h1>
     <h3>MEET THE BEST GUIDES IN THE INDUSTRY</h3>
     <h4>A SHORT INTRODUCTION:</h4>
-    <h5>ANA</h5>
-    <p>Famous for her eyesight and finding remote spots off the beaten track.</p>
-    <h5>MARTA</h5>
-    <p>She likes to consider herself a close friend of the beautiful and largest of all antelopes: the Giant Eland.</p>
-    <h5>DIOGO</h5>
-    <p>He started his career as mountain guide and has climbed Kilimanjaro 12 times!</p>
-    <h5>RODRIGO</h5>
-    <p>Arguably our most stylish guide, don't forget to ask him to sing you a song during your safari :)</p>
-    <h5>LUÍS</h5>
-    <p>His favourite animal is the cheetah and he is amazed every time he sees one.</p>
+   </div>
+    
 
-    <h3>WHAT WE DO:</h3>
-    <p>We have a different approach to safaris in our DNA. A safari should not be just a lifestyle experience with a list of
-        animals to tick off from a list. There is beauty in the small details, there are rewards to collect when you are
-        patient. We embrace those small moments: Going out of the beaten track to where there are no more vehicles, slow
-        down and spend some time watching a lion pride interacting with themselves instead of rushing to the next sighting.
-        A safari should be about the feelings it provides, the experience of being out there in the wild witnessing nature
-        as it is, with no rush.
-    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col2">
+                <img id="guide-photo" src="../resources/Photo.png" alt="photo" />
+                <h5 id="guide-name">ANA</h5>
+                <p>Famous for her eyesight and finding remote spots off the beaten track. Unless there’s food around… She really
+                    likes to eat!</p>
+            </div>
+            <div class="col2">
+                <img id="guide-photo" src="../resources/Photo.png" alt="photo" />
+                <h5 id="guide-name">DIOGO</h5>
+                <p>He started his career as mountain guide and has climbed Kilimanjaro 12 times but unfortunately that stopped
+                    when he took an arrow to the knee.</p>
+            </div>
+            <div class="col2">
+                <img id="guide-photo" src="../resources/Photo.png" alt="photo" />
+                <h5 id="guide-name">MARTA</h5>
+                <p>She likes to consider herself a close friend of the beautiful and largest of all: the African Elephant, and
+                    she loves their smell, go figure!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="sep"></div>
+                <div class="col2">
+                    <img id="guide-photo" src="../resources/Photo.png" alt="photo" />
+                    <h5 id="guide-name">LUÍS</h5>
+                    <p>His spirit animal is the cheetah and he is amazed every time he sees one!</p>
+                </div>
+                <div class="col2">
+                    <img id="guide-photo" src="../resources/Photo.png" alt="photo" />
+                    <h5 id="guide-name">RODRIGO</h5>
+                    <p>Arguably our most stylish guide, don’t forget to ask him to sing you a song during your safari unless it's
+                        kizomba!
+                    </p>
+                </div>
+                <div class="sep"></div>
+        </div>
+    </div>
+        
+
+    <div class="title">
+        <div class="banner">
+            <h3>WHAT WE DO:</h3>
+            <p>We have a different approach to safaris in our DNA. A safari should not be just a lifestyle experience with a list of
+                animals to tick off from a list. There is beauty in the small details, there are rewards to collect when you are
+                patient. We embrace those small moments: Going out of the beaten track to where there are no more vehicles, slow
+                down and spend some time watching a lion pride interacting with themselves instead of rushing to the next sighting.
+                A safari should be about the feelings it provides, the experience of being out there in the wild witnessing nature
+                as it is, with no rush.
+            </p>
+        </div>
+            
+
+    </div>
+   
 </body>
 
 </html>
