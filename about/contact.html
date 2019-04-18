@@ -20,17 +20,25 @@
 
 <body>
 
-
     <div class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="../tour/tours.html">Tours</a>
-        <a href="../about/about.html">About Us</a>
-        <a href="../about/contact.html">Contact</a>
+        <a class="dropdown" href="../index.html">Home</a>
+
+        <div class="navContainer">
+            <div class="dropdown">
+                <p class="dropbtn">Tours</p>
+                <div class="dropdown-content">
+                    <a id="toursBtn" href="../tour/tours.html">See Our Packs</a>
+                    <a id="customBtn" href="../tour/custom.html">Make Your Own</a>
+                </div>
+            </div>
+            <a class="dropbtn" href="../about/about.html">About Us</a>
+            <a class="dropdown" href="../about/contact.html">Contact</a>
+        </div>
     </div>
 
-    <header class="ccheader">
-        <h1>Contact Us</h1>
-    </header>
+
+
+
 
 
 
