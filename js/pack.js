@@ -24,12 +24,12 @@ $(document).ready(function() {
         console.log(element.description);
         $('.dayList > ul').append('<li><a href="#' + (element.day == 1 ? 'description' : 'day' + (element.day -1)) + '">Day ' + element.day + ' - ' + element.name +'</a></li>')
         if (element.day % 2 === 1) {
-            $('#day'+ element.day).append('<div class="dayImage left"><img src="' + element.image + '"></div>');
+            $('#day'+ element.day).append('<div class="dayImage left" style="background-image : url(\'' + element.image +'\')">&nbsp;</div>');
             $('#day'+ element.day).append('<div class="dayDesc right"><h3>'+ element.day +'</h3> </a> <p>' + element.description + '</p>></div>');
             
 
         } else {
-            $('#day'+ element.day).append('<div class="dayImage right"><img src="' + element.image + '"></div>');
+            $('#day'+ element.day).append('<div class="dayImage right" style="background-image : url(\'' + element.image +'\')">&nbsp;</div>');
             $('#day'+ element.day).append('<div class="dayDesc left"> <h3 style="text-align:right;">'+ element.day +'</h3> <p>' + element.description + '</p>></div>');
             
         }
