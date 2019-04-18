@@ -17,11 +17,11 @@ $(document).ready(function () {
     var destination = [
         {
             description: "Tanzania"
-            
+
         },
         {
-            description:"Quenia"
-           
+            description: "Kenya"
+
         }
     ]
     var safari_custom_name = "Hakuna Batata Safari";
@@ -69,63 +69,63 @@ $(document).ready(function () {
             price: 10
         },
         {
-            description:"Protein bar",
-            price:15
+            description: "Protein bar",
+            price: 15
         },
         {
-            description:"Bottle of water",
-            price:40
+            description: "Bottle of water",
+            price: 40
         },
         {
-            description:"A Roll of toilet paper",
+            description: "A Roll of toilet paper",
             price: 35
         },
         {
-            description:"Free booze",
+            description: "Free booze",
             price: 80
         },
         {
-            description:"Pool",
-            price:70
+            description: "Pool",
+            price: 70
         },
         {
-            description:"Spa",
-            price:75
+            description: "Spa",
+            price: 75
         },
         {
-            description:"Laundry service",
-            price:60
+            description: "Laundry service",
+            price: 60
         },
         {
-            description:"WI_FI",
-            price:75
+            description: "WI_FI",
+            price: 75
         },
         {
-            description:"24h security",
-            price:85
+            description: "24h security",
+            price: 85
         },
         {
-            description:"Artisinal booby traps",
-            price:30
+            description: "Artisinal booby traps",
+            price: 30
         },
         {
-            description:"Over 9000 rolls of toilet paper",
-            price:50
+            description: "Over 9000 rolls of toilet paper",
+            price: 50
         },
         {
-            description:"Transfers",
-            price:60
+            description: "Transfers",
+            price: 60
         }
 
     ];
-    var days_available =[
+    var days_available = [
         {
             description: "6 days, 5 nights",
             price: 40
         },
         {
-            description:"11 days, 10 nights",
-            price:80
+            description: "11 days, 10 nights",
+            price: 80
         }
     ];
 
@@ -134,12 +134,29 @@ $(document).ready(function () {
     var pack_custom = {
         destination: destination,
         name: safari_custom_name,
-        days:days_available ,
+        days: days_available,
         accommodation: accommodation_type_custom,
         food: food_type_custom,
         flight: flight_type_custom,
-        itinerary: premium_itinerary_tanzania,
+        //itinerary: premium_itinerary_tanzania,
         kit: custom_kit,
-        price:""
+        price: ""
     }
+
+
+    $("#menu-country").on("change", event => {
+        var countryChosen = event.target[event.target.selectedIndex].value;
+        console.log(countryChosen);
+        var teste = destination.filter(element => {
+            console.log(element);
+            if (countryChosen === element) {
+                console.log(element);
+                console.log(countryChosen);
+                return element;
+            }
+        })
+        console.log(teste);
+    })
+
+
 });
