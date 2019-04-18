@@ -193,6 +193,7 @@ $(document).ready(function () {
 
 
     var pack_basic_tanzania = {
+        id: 'tanzaniaBasic',
         name: safari_name[0],
         days: 5,
         accommodation: {
@@ -211,6 +212,7 @@ $(document).ready(function () {
     
 
     var pack_premium_tanzania = {
+        id: 'tanzaniaPremium',
         name: safari_name[1],
         days: 11,
         accommodation: {
@@ -229,6 +231,7 @@ $(document).ready(function () {
 
 
     var pack_basic_quenia = {
+        id: 'queniaBasic',
         name: safari_name[0],
         days: 5,
         accommodation: {
@@ -247,6 +250,7 @@ $(document).ready(function () {
 
     
     var pack_premium_quenia = {
+        id: 'queniaPremium',
         name: safari_name[1],
         days: 11,
         accommodation: {
@@ -268,10 +272,6 @@ localStorage.setItem("pack_basic_tanzania", JSON.stringify(pack_basic_tanzania))
 localStorage.setItem("pack_premium_tanzania", JSON.stringify(pack_premium_tanzania));
 localStorage.setItem("pack_basic_quenia", JSON.stringify(pack_basic_quenia));
 localStorage.setItem("pack_premium_quenia", JSON.stringify(pack_premium_quenia));
+console.log(typeof JSON.stringify(pack_basic_tanzania));
 
-$("#button").on("click", () => {
-    var currentPack = JSON.parse(localStorage.getItem("pack_basic_tanzania"));
-    localStorage.setItem("currentPack", currentPack);
-})
-})
-
+});
