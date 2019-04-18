@@ -211,7 +211,7 @@ $(document).ready(function () {
 
     var pack_basic_tanzania = {
         id: 'tanzaniaBasic',
-        description: 'Basic tanzania: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
+        description: 'This is a fascinating adventure through some of the most emblematic parks in northern Tanzania, like Serengeti, Tarangire and Ngorongoro, but also including a day at the bizarre Lake Natron.',
         name: safari_name[0],
         days: 5,
         accommodation: {
@@ -231,7 +231,7 @@ $(document).ready(function () {
 
     var pack_premium_tanzania = {
         id: 'tanzaniaPremium',
-        description: 'Premium tanzania: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
+        description: 'Tanzania in a heart accelerating journey through Nakuru, Masai Mara, Serengeti, Ngorongoro, Manyara and Amboseli.',
         name: safari_name[1],
         days: 11,
         accommodation: {
@@ -251,7 +251,7 @@ $(document).ready(function () {
 
     var pack_basic_quenia = {
         id: 'queniaBasic',
-        description: 'Basic quenia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
+        description: 'Take the most out of 5 days in Kenya. Explore Lake Naivasha with its famous Hell’s Gate, enjoy Lake Nakuru’s regal birdlife and then have the full safari experience in the Mara National Reserve’s amazing setting.',
         name: safari_name[0],
         days: 5,
         accommodation: {
@@ -272,7 +272,7 @@ $(document).ready(function () {
     var pack_premium_quenia = {
         id: 'queniaPremium',
         name: safari_name[1],
-        description: 'premium Quenia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
+        description: 'he tour of a lifetime. Immerse yourself in Kenya for 9 days. Begin your journey with the parks of the coast, Tsavo West and Amboseli, with 2 night in each of them. Marvel at the huge elephants under the gazing Kilimanjaro. Take a relaxing break as you go west, and enjoy Lake Naivasha with its flamingos and hippos. Go on to The Great Mara and use those 3 nights to forge memories and images of the Big 5 that will last forever. Why not take a balloon safari? As you go back to Nairobi, stop for a night at the gorgeous Lake Nakuru.',
         days: 11,
         accommodation: {
             type: accommodation_type[1],
