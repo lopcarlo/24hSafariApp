@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
+    <script src="../js/custom.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+            <a href="../tour/tours.html" class="dropbtn">Tours
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Tanzania</a>
+                    <a href="#">Quenia</a>
+                </div>
+        </div>
+        <a href="../about/about.html">About Us</a>
+
+        <a href="../about/contact.html">Contact</a>
+    </div>
+
+
+    <div class="customform">
+        <form action="">
+            <div class="dropdownmenu">
+                <p>Country</p>
+                <select id="menu-country" name="country">
+                    <option id="Kenya" value="kenya">Kenya</option>
+                    <option id="Tanzania" value="tanzania">Tanzania</option>
+                </select>
+                <br>
+                <br>
+                <p>Flight</p>
+                <select id="menu-flight" name="flight">
+                    <option id="low-cost">Amazing Low Cost, no space for legs</option>
+                    <option id="first-class">First Class</option>
+                    <option id="coach">Coach</option>
+                </select>
+                <br>
+                <br>
+                <p>Stay</p>
+                <select id="menu-stay" name="stay">
+                    <option id="menu-small-stay">5 days, 4 nights</option>
+                    <option id="menu-long-stay">9 days, 8 nights</option>
+                </select>
+                <br>
+                <br>
+                <p>Food</p>
+                <input id="menu-food-bugs" type="checkbox" name="Bugs" value="Bugs">Bugs
+                <br>
+                <input id="menu-food-buffet" type="checkbox" name="Buffet" value="Buffet">Buffet
+                <br>
+                <input id="menu-food-vegan" type="checkbox" name="Vegan" value="Vegan">Vegan
+                <br>
+                <input id="menu-food-sushi" type="checkbox" name="Sushi" value="Sushi">Sushi
+                <br>
+                </select>
+                <br>
+                <br>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
