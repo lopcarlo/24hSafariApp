@@ -16,12 +16,12 @@ $(document).ready(function () {
 
     var destination = [
         {
-            description: "Tanzania"
-
+            description: "Tanzania",
+            price: 4000
         },
         {
-            description: "Kenya"
-
+            description: "Kenya",
+            price: 5000
         }
     ]
     var safari_custom_name = "Hakuna Batata Safari";
@@ -120,11 +120,11 @@ $(document).ready(function () {
     ];
     var days_available = [
         {
-            description: "6 days, 5 nights",
+            description: "5 days, 4 nights",
             price: 40
         },
         {
-            description: "11 days, 10 nights",
+            description: "9 days, 8 nights",
             price: 80
         }
     ];
@@ -145,42 +145,50 @@ $(document).ready(function () {
 
     var customPackage = {};
     var price;
-    
-
-    
-
-    /*flight_type_custom.forEach(element => {
-        console.log("description" + element.description);
-        console.log("flight:" + customPackage.flight);
-        if(element.description === customPackage.flight){
-            console.log("teste2");
-        }
-    });*/
-    /*if(customPackage.flight === flight_type_custom.description){
-        console.log("teste");
-        price = flight_type_custom.price;
-        console.log(flight_type_custom[0].price);
-    }*/
 
 
-
-
-    $("#step2").on("click", function(event) {
-        console.log($("#menu-country").val());
+    $("#step2").on("click", function (event) {
         customPackage = {
             country: $("#menu-country").val(),
             flight: $("#menu-flight").val(),
             stay: $("#menu-stay").val(),
             food: $("#menu-food").val()
         }
+        persist();
         event.preventDefault();
-        console.log(customPackage);
-    }) 
+    })
 
-    if($("#menu-country").val() === Kenya){
-        console.log("teste");
+    function persist() {
+        destination.forEach(element => {
+            if(element.description === customPackage.country){
+                price = element.price;
+                console.log(element.price);
+            }
+        })
+
+        flight_type_custom.forEach(element => {
+            if (element.description === customPackage.flight) {
+                price += element.price;
+                console.log("1st element" + element.price);
+            }
+        });
+        days_available.forEach(element => {
+            if (element.description === customPackage.stay){
+                price += element.price;
+                console.log("elemenet" + element.price);
+                console.log("total" + price);
+            }
+        })
+        food_type_custom.forEach(element => {
+            if (element.description === customPackage.food){
+                price += element.price;
+                console.log(price);
+            }
+        })
+        $(".itineraryChoice").append("<p><b>Total cost = € " + price + ",00</b></p>");
     }
-    
+
+
 
 
 });
