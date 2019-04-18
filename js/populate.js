@@ -12,37 +12,37 @@ $(document).ready(function () {
             day: 1,
             name: "RANGIRE NATIONAL PARK",
             description:"We will pick you up from your hotel at 8am and take you to a very special national park. Tarangire is famous for its diverse landscape with nine different vegetation zones. The park is particularly known for the abundance of Ancient Baobab trees (the largest trees in the continent) which fill the landscape and dwarf the animals next to them. The river of the park is full of wildlife ranging from a large variety of birds to lions, leopards, zebras, giraffes, buffaloes, antelopes and, of course, elephants. In fact, the park has the largest concentration of elephants in the whole country and provides unique chances to observe the interaction between elephant families. The lunch area is fascinating, boasting an observatory with amazing views to the river and wildlife (with good chances of seeing a hunt while having your picnic). In the afternoon we will still do a game drive before continuing to your accommodation",
-            image: "../resources/tours_specific/tours.jpg"
+            image: "../resources/2.jpg"
         },
         {
             day: 2,
             name:"SERENGETI NATIONAL PARK",
             description: "After an early breakfast, depart towards the most famous National park in the World, the Serengeti. The driving itself, although long, is spectacular. You will drive up the crater highlands, making a quick stop at the rim for an out of this world view of Ngorongoro Crater. This will be an unforgettable moment for anyone seeing it for the first time. As you progress well into the Serengeti, you will see why the name means, in local language, 'endless plains'. The park has 6,900 sq. mile (18,000 sq. km) and for most of it, the plains will stretch to the horizon defying your senses and perception of distances. It is the home of the Great Migration and to 2 million wildebeests, hundreds of thousands of zebras and all kinds of antelopes including the abundant impalas and Thomson's gazelles. As for Big Cats and large predators, it's the place of choice to look out for lions, cheetahs, leopards, hyenas, with many television scenes like the famous river crossings having been filmed in this park. Smaller animals like foxes, mongoose, honey badgers, jackals, monkeys, baboons, rock hyrax and African hares, together with more than 500 species of birds, also inhabit this park.",
-            image: "../resources/tours_specific/tours.jpg"
+            image: "../resources/3.jpg"
         },
         {
             day: 3,
             name:"ERENGETI NATIONAL PARK",
             description:"Full day in the Serengeti National Park. We are completely flexible with your preferences and this day will be organized according to your wishes. On every day of the safari, your guide will discuss with you the best timings for you, including the game drives and the wake up time. For example, on this day, you could do a morning game drive, return to the camp for lunch and relaxation and finish with an afternoon game drive, or you could do a full day game drive with picnic lunch.",
-            image: "../resources/tours_specific/tours.jpg"
+            image: "../resources/4.jpg"
         },
         {
             day: 4,
             name:"NGORONGORO CONSERVATION AREA",
             description:"On this day we suggest a very early wake up in order to do an early morning game drive (when the animals are more active) and see one of the best sunrises you'll ever witness. It's really one of the most beautiful experiences to have. After the game drive, we return to the camp for a rewarding brunch and then we'll proceed to Ngorongoro, the 8th wonder of the Natural World. The crater spreads for 102 sq. miles and has 2.000 ft high walls, making it virtually a Noah's ark and inhabiting almost every species of wildlife that is indigenous to East Africa. It's one of the very rare locations in the whole continent where you can witness the black Rhino. The concentration of African wildlife if the greatest in the continent. The crater has a river, several swamps, a soda lake with a great concentration of flamingos, a forest and open plains. It's also famous for its elephants which are the largest in the world and have huge tusks. This is due to the rich mineral content of the volcanic soil and its grasses. Ngorongoro Crater is truly a Wonder of the Natural World.You will reach Ngorongoro in time for a sundowner.",
-            image: "../resources/tours_specific/tours.jpg"
+            image: "../resources/5.jpg"
         },
         {
             day: 5,
             name:"NGORONGORO CRATER - LAKE NATRON",
             description:"We will start the day very early and descend into the crater floor for an incredible morning of wildlife in one of the most stunning places on Earth. After the game drive, transfer to singular Lake Natron (4h) with picnic lunch. Visit to lake and surroundings. ",
-            image: "../resources/tours_specific/tours.jpg"
+            image: "../resources/6.jpg"
         },
         {
             day: 6,
             name:"LAKE NATRON",
             description:"After a wake up call with coffee and cookies, you will take early morning walks to the lake flats to observe flamingos. Located at the base of Africa’s only active volcano (Oldonyo Lengai) and between Ngorongoro Highlands and Serengeti plains, Lake Natron lies in a dry and desolated area also inhabited by Maasai. Untouched, distant, mysterious, this Lake is one of the most alkaline lakes in the world and special shelter to millions of tiny crustaceans, attracting literally thousands of Lesser flamingos. After breakfast, trek to local waterfalls. Beautiful and surrounded by lush vegetation, these waterfalls break the yellow coloured pattern found in the savannah. Transfer to Arusha.",
-            image: "../resources/tours_specific/tours.jpg"
+            image: "../resources/7.jpg"
         },
     ];
 

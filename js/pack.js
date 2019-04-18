@@ -22,10 +22,10 @@ $(document).ready(function() {
 
         $('#itinerary').append('<div id="day'+ element.day +'" class="dayContainer">  </div>');
         console.log(element.description);
-        $('.dayList > ul').append('<li>Day ' + element.day + ' - ' + element.name +'</li>')
+        $('.dayList > ul').append('<li><a href="#' + (element.day == 1 ? 'description' : 'day' + (element.day -1)) + '">Day ' + element.day + ' - ' + element.name +'</a></li>')
         if (element.day % 2 === 1) {
             $('#day'+ element.day).append('<div class="dayImage left"><img src="' + element.image + '"></div>');
-            $('#day'+ element.day).append('<div class="dayDesc right"><a href="#day' +element.id + '"><h3>'+ element.day +'</h3> </a> <p>' + element.description + '</p>></div>');
+            $('#day'+ element.day).append('<div class="dayDesc right"><h3>'+ element.day +'</h3> </a> <p>' + element.description + '</p>></div>');
             
 
         } else {
