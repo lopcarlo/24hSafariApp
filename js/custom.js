@@ -33,7 +33,7 @@ $(document).ready(function () {
         },
         {
             description: "All you can eat buffet",
-            price: 100
+            price: 300
         },
         {
             description: "Vegan",
@@ -41,7 +41,7 @@ $(document).ready(function () {
         },
         {
             description: "Sushi",
-            price: 80
+            price: 250
         },
         {
             description: "Regional Food",
@@ -52,15 +52,15 @@ $(document).ready(function () {
     var flight_type_custom = [
         {
             description: "Amazing Low Cost, no space for legs",
-            price: 20
+            price: 60
         },
         {
             description: "First Class",
-            price: 150
+            price: 200
         },
         {
             description: "Choach",
-            price: 50
+            price: 120
         }
     ];
     var custom_kit = [
@@ -189,7 +189,7 @@ $(document).ready(function () {
                 console.log(price);
             }
         })
-        $(".itineraryChoice").append("<p><b>Total cost = € " + price + ",00</b></p>");
+        $(".itineraryChoice").html("<p><b>Total cost = € " + price + ",00</b></p>");
     }
 
 
