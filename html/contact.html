@@ -2,19 +2,19 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Table</title>
+    <title>Contacts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
 
-    <link rel="stylesheet" type="text/css" href="contact.css">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src="contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="../js/contact.js"></script>
 
 </head>
 
@@ -37,47 +37,45 @@
 
 
     <header class="ccheader">
-            <h1>Contact US</h1>
-        </header>
+        <h1>Contact US</h1>
+    </header>
 
-
-   
 
 
     <div class="wrapper">
-        <form method="post" action="mailto:lopcarlo@gmail.com" class="ccform">
+        <form method="post" id="ccform" action="" class="ccform">
             <div class="ccfield-prepend">
                 <span class="ccform-addon">
                     <i class="fa fa-user fa-2x"></i>
                 </span>
-                <input class="ccformfield" type="text" placeholder="Full Name" required>
+                <input class="ccformfield" type="text" id="name" name="name" placeholder="Full Name" required>
             </div>
             <div class="ccfield-prepend">
                 <span class="ccform-addon">
                     <i class="fa fa-envelope fa-2x"></i>
                 </span>
-                <input class="ccformfield" type="text" placeholder="Email" required>
+                <input class="ccformfield" type="text" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="ccfield-prepend">
                 <span class="ccform-addon">
                     <i class="fa fa-mobile-phone fa-2x"></i>
                 </span>
-                <input class="ccformfield" type="text" placeholder="Phone">
+                <input class="ccformfield" type="text" id="phone" name="phone" placeholder="Phone">
             </div>
             <div class="ccfield-prepend">
                 <span class="ccform-addon">
                     <i class="fa fa-info fa-2x"></i>
                 </span>
-                <input class="ccformfield" type="text" placeholder="Subject" required>
+                <input class="ccformfield" type="text" id="subject" name="subject" placeholder="Subject" required>
             </div>
             <div class="ccfield-prepend">
                 <span class="ccform-addon">
                     <i class="fa fa-comment fa-2x"></i>
                 </span>
-                <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+                <textarea class="ccformfield" name="comments" rows="8" id="message" name="message" placeholder="Message" required></textarea>
             </div>
             <div class="ccfield-prepend">
-                <input class="ccbtn" type="submit" value="Submit">
+                <button id="ccbtn1" class="ccbtn" value="Submit">Submit</button>
             </div>
         </form>
     </div>
