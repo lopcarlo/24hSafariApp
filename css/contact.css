@@ -70,8 +70,8 @@ body {
 .ccbtn{
 	display:block;
 	border:none;
-	background: grey;
-	color:#FFFFFF;
+	background:white;
+	color:gray;
 	padding:12px 25px;
 	cursor:pointer;
 	text-decoration:none;

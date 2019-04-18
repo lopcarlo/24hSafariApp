@@ -1,24 +1,40 @@
 $(document).ready(function () {
 
-    function init() {
-        ccFormAction();
+    send();
 
-        $("#ccform").submit(function (e) {
-            e.preventDefault();
+    var ccforms= {};
+
+    function send() {
+
+        $("#ccbtn1").on("click", (event) => {
+           
+            var name = $('#name').val();
+            var email= $('#email').val();
+            var phone = $('#phone').val();
+            var subject = $('#subject').val();
+            var message = $('#message').val();
+
+            persist(name, email, phone, subject, message);
+
+            console.log("aqui");
+            event.preventDefault();
+            
         });
 
     }
-    init();
 
+    function persist(name, email, phone, subject, message){
+        ccforms.name = name;
+        ccforms.email = email;
+        ccforms.phone = phone;
+        ccforms.subject = subject;
+        ccforms.message = message;
 
+        localStorage.setItem('ccForms', JSON.stringify(ccforms));
 
-    function ccFormAction() {
-        $("#ccbtn").click(function () {
-            console.log("teste");
-            
-
-
-        })
+        console.log(ccforms);
+        
+        
 
     }
 
