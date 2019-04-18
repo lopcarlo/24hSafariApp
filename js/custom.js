@@ -17,11 +17,11 @@ $(document).ready(function () {
     var destination = [
         {
             description: "Tanzania",
-            price: 4000
+            price: 5000
         },
         {
             description: "Kenya",
-            price: 5000
+            price: 4000
         }
     ]
     var safari_custom_name = "Hakuna Batata Safari";
@@ -42,6 +42,10 @@ $(document).ready(function () {
         {
             description: "Sushi",
             price: 80
+        },
+        {
+            description: "Regional Food",
+            price: 100
         }
     ];
 
