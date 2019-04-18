@@ -1,31 +1,52 @@
 #packDescription {
     width: 100%;
     padding: 15px;
+
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../resources/background/bg_tour_kenya.jpg');
+    background-size: cover;
+    z-index: -1212;
+
+}
+
+#rest {
+    position: absolute;
 }
 
 #packDescription > .container {
     width: 40%;
-    height: 300px;
+    height: 340px;
     margin: auto;
-    background-color: blue;
-
     background-color:bisque;
     border-radius: 20px; 
+    padding: 20px;
 }
 
 #packDescription > .container > .map {
     display: inline-block;
-    width: 60%;
+    width: 55%;
     height: 300px;
     padding: 5px;
+    background-image: url('../resources/maps/basic_safari_kenya.png');
+    background-size: cover;
     
 }
+
+#basicQueniaMap {
+
+}
+
+
 
 #packDescription > .container > .dayList {
     display: inline-block;
     width: 40%;
     height: 300px;
-    background-color: green;
     padding-top:30px;
     font-size: 13px
 }
