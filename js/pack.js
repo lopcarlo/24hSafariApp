@@ -5,7 +5,9 @@ $(document).ready(function() {
     console.log(currentPack)
     $('#packName').html('this is:' + currentPack.name);
 
-    var container = $('body').append('<div id="'+ currentPack.id +'Container"></div>');
-    container.append();
+    $('body').append('<div id="'+ currentPack.id +'Container"></div>');
+    $(currentPack.id +"Container").append(); 
+
+    
 
 });
