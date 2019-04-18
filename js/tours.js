@@ -1,25 +1,15 @@
 $(document).ready(function () {
 
-    function populate(responce) {
+    console.log('starting tours');
+    var currentPack = JSON.parse(localStorage.getItem('pack_basic_tanzania'));
+        localStorage.setItem("currentPack", JSON.stringify(currentPack) ); 
 
-        responce.forEach(function(country) {
-            
-            var countryName = country.name;
-            var countryDesc = country.countryDesc;
-
-            var body = $('body');
-
-            body.append ('<div id="' + countryName + 'Content" class="content"><div>');
-
-
-
-            
-
-
-
-        });
-
-    }
-
+        console.log('currentPack: ' + currentPack.name);
     
-})
+$('#basicKeniaBtn').on('click', function() {
+    var currentPack = JSON.parse(localStorage.getItem('pack_basic_tanzania'));
+    localStorage.setItem("currentPack", JSON.stringify(currentPack) ); 
+});
+
+});
+

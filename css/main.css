@@ -4,7 +4,13 @@
     position: fixed; 
     top: 0; 
     width: 100%; 
+    height: 60px;
     z-index: 99999999;
+  }
+
+  .fakeNav {
+    height: 60px;
+    widows: 100%;
   }
   
   .navbar a {
