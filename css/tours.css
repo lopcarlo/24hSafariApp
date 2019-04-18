@@ -18,11 +18,11 @@
 }
 
  #queniaContent {
-    background-image: url("../resources/5.jpg");
+    background-image: url("../resources/background/bg_tour_kenya.jpg");
  }
 
  #tanzaniaContent {
-    background-image: url("../resources/6.jpg");
+    background-image: url("../resources/background/bg_tour_tanzania.jpg");
     z-index: 9999999999;
  }
 
