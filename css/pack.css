@@ -23,6 +23,8 @@
     width: 40%;
     height: 300px;
     background-color: green;
+    padding-top:20px;
+    font-size: 13px
 }
 
 #description {
@@ -36,6 +38,9 @@
     width: 60%;
     margin: auto;
     height: 300px;
+    padding: 15px;
+    background-color: bisque;
+    border-radius: 20px;
 }
 
 .dayImage {
@@ -49,8 +54,9 @@
 
 .dayDesc {
     display: inline-block;
-    width: 60%;
+    width: 55%;
     font-size: 13px;
+    text-align: justify;
 }
 
 
