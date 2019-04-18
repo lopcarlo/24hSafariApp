@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
-    <script src="js/tours_specific.js"></script>
 
 
 </head>
@@ -20,10 +19,19 @@
 <body>
 
     <div class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="/tour/tours.html">Tours</a>
-        <a href="/about/about.html">About Us</a>
-        <a href="/about/contact.html">Contact</a>i
+        <a class="dropdown" href="./index.html">Home</a>
+
+        <div class="navContainer">
+                <div class="dropdown">
+                        <p class="dropbtn">Tours</p>
+                        <div class="dropdown-content">
+                            <a id="toursBtn" href="./tour/tours.html">Kenia</a>
+                            <a id="customBtn" href="./tour/custom.html">Tanzania</a>
+                        </div>
+                </div>
+                <a class="dropbtn" href="/about/about.html">About Us</a>
+                <a class="dropdown" href="/about/contact.html">Contact</a>
+        </div>
     </div>
 
 
