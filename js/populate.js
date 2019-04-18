@@ -195,6 +195,7 @@ $(document).ready(function () {
 
     var pack_basic_tanzania = {
         id: 'tanzaniaBasic',
+        description: 'Basic tanzania: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
         name: safari_name[0],
         days: 5,
         accommodation: {
@@ -214,6 +215,7 @@ $(document).ready(function () {
 
     var pack_premium_tanzania = {
         id: 'tanzaniaPremium',
+        description: 'Premium tanzania: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
         name: safari_name[1],
         days: 11,
         accommodation: {
@@ -233,6 +235,7 @@ $(document).ready(function () {
 
     var pack_basic_quenia = {
         id: 'queniaBasic',
+        description: 'Basic quenia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
         name: safari_name[0],
         days: 5,
         accommodation: {
@@ -253,6 +256,7 @@ $(document).ready(function () {
     var pack_premium_quenia = {
         id: 'queniaPremium',
         name: safari_name[1],
+        description: 'premium Quenia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum justo leo, nec feugiat ligula maximus eu. Ut sagittis magna at eros efficitur, sed imperdiet magna scelerisque. Proin auctor justo dolor, quis viverra nibh fermentum ac. Donec at erat et lectus convallis mollis. In ac erat libero. Ut vehicula, lacus at ullamcorper cursus, ipsum turpis consectetur libero, nec dignissim purus justo at dui. Sed laoreet, eros non laoreet hendrerit, libero magna venenatis felis, sed rhoncus diam risus id augue.',
         days: 11,
         accommodation: {
             type: accommodation_type[1],
