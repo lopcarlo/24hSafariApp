@@ -6,6 +6,9 @@
 	font-family: 'Lato', Arial, sans-serif;
 
 }
+.animated {
+  animation-duration: 3s;
+}
 
 .navbar {
     overflow: hidden;

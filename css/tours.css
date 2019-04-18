@@ -14,7 +14,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: red;
 }
 
  #queniaContent {
@@ -35,12 +34,13 @@
  .info {
      position: relative;
      right: 10%;
-     top: 200px;
+     top: 350px;
      min-width: 400px;
      width: 25%;
-     background-color: green;
+     background-color: rgba(230, 161, 93, 0.692);
      padding: 15px;
      z-index: 9999;
+     border-radius: 20px;
  }
 
  .info>.packs {
@@ -48,10 +48,12 @@
      display: inline-block;
      margin: auto;
      width: 49%;
-     border: 2px solid red;
+     border: 2px solid brown;
+     border-radius: 20px 20px 0px 0px ;
  }
 
 .packs > .packTitle {
+    color: brown;
     font-size: 24px;
     display: block;
 }
@@ -70,13 +72,19 @@
     clear: both;
     display: block;
     padding: 10px 0px;
-    background-color: blue;
 }
 
-.more > a {
+.more > div {
     display: inline-block;
     width: 49%;
+    text-align: center;
+}
+
+.more > div > a {
+    width: 60%;
     line-height: 100%;
+    padding: 5px;
+    background-color: rgba(230, 161, 93, 0.692) 
 }
 
  .right {
