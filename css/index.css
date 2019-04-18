@@ -1,5 +1,5 @@
 .hero-image {
-  background-image: url("../resources/tanzania\ BG.jpg");
+  background-image: url("../resources/Home.jpg");
   background-color: #cccccc;
   height: 100vw;
   background-position: center;
@@ -9,22 +9,32 @@
 
 .hero-text {
   text-align: center;
-  position: relative;
   top: 50%;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
+.hero-text h1{
+  font: bold 60px Arial;
+}
 .hero-text a{
-  font: bold 11px Arial;
+  display: inline-block;
+  margin-top: 300px;
+  font: bold 50px Arial;
   text-decoration: none;
-  background-color: #EEEEEE;
+  background-color: rgb(119, 110, 110);
   color: #333333;
   padding: 2px 6px 2px 6px;
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+  border-radius: 20%;
 
+}
+
+.hero-text a:hover{
+  background-color: #9c5252;
 }

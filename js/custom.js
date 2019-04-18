@@ -130,7 +130,7 @@ $(document).ready(function () {
     ];
 
 
-
+/*
     var pack_custom = {
         destination: destination,
         name: safari_custom_name,
@@ -157,6 +157,7 @@ $(document).ready(function () {
         })
         console.log(teste);
     })
+
 
 
 });
