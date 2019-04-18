@@ -1,11 +1,12 @@
 $(document).ready(function () {
 
-    var accommodation_type = ["Tent", "Lodge"];
-    var safari_name = ["Kuishi Safari","Mtafiti Safari"];
+    var accommodation_type = ["Tent", "Small Lodge"];
+    var safari_name = ["Kuishi Safari", "Mtafiti Safari"];
     var food_type = ["Bugs", "All you can eat buffet"];
-    var flight_type = ["Amazing Low Cost, no space for legs", "First Class"];
+    var flight_type = ["Amazing Low Cost, no space for legs", "First Class", "Coach"];
     var survival_kit = ["Shovel", "Bug repellent", "Protein bar", "Bottle of water", "A roll of toilet paper"];
     var premium_kit = ["Free booze", "Pool", "Spa", "Laundry service", "Wi-Fi", "24h security"];
+
     var basic_itinerary_tanzania = [
         {
             day: 1,
@@ -205,10 +206,10 @@ $(document).ready(function () {
             price: 700
         },
         itinerary: basic_itinerary_tanzania,
-        survival_kit: survival_kit,
+        kit: survival_kit,
         price: 1000
     }
-    
+
 
     var pack_premium_tanzania = {
         name: safari_name[1],
@@ -223,7 +224,7 @@ $(document).ready(function () {
             price: 2000
         },
         itinerary: premium_itinerary_tanzania,
-        premium_kit: premium_kit,
+        kit: premium_kit,
         price: 6000
     }
 
@@ -241,11 +242,11 @@ $(document).ready(function () {
             price: 700
         },
         itinerary: basic_itinerary_quenia,
-        survival_kit: survival_kit,
+        kit: survival_kit,
         price: 1000
     }
 
-    
+
     var pack_premium_quenia = {
         name: safari_name[1],
         days: 11,
@@ -259,19 +260,26 @@ $(document).ready(function () {
             price: 2000
         },
         itinerary: premium_itinerary_quenia,
-        premium_kit: premium_kit,
+        kit: premium_kit,
         price: 6000
     }
 
 
-localStorage.setItem("pack_basic_tanzania", JSON.stringify(pack_basic_tanzania));
-localStorage.setItem("pack_premium_tanzania", JSON.stringify(pack_premium_tanzania));
-localStorage.setItem("pack_basic_quenia", JSON.stringify(pack_basic_quenia));
-localStorage.setItem("pack_premium_quenia", JSON.stringify(pack_premium_quenia));
 
-$("#button").on("click", () => {
-    var currentPack = JSON.parse(localStorage.getItem("pack_basic_tanzania"));
-    localStorage.setItem("currentPack", currentPack);
-})
+
+
+
+  
+
+
+    localStorage.setItem("pack_basic_tanzania", JSON.stringify(pack_basic_tanzania));
+    localStorage.setItem("pack_premium_tanzania", JSON.stringify(pack_premium_tanzania));
+    localStorage.setItem("pack_basic_quenia", JSON.stringify(pack_basic_quenia));
+    localStorage.setItem("pack_premium_quenia", JSON.stringify(pack_premium_quenia));
+
+    $("#button").on("click", () => {
+        var currentPack = JSON.parse(localStorage.getItem("pack_basic_tanzania"));
+        localStorage.setItem("currentPack", currentPack);
+    })
 })
 
