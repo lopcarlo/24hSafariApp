@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         },
         {
-            description: "Quenia"
+            description: "Kenya"
 
         }
     ]
@@ -138,31 +138,25 @@ $(document).ready(function () {
         accommodation: accommodation_type_custom,
         food: food_type_custom,
         flight: flight_type_custom,
-        itinerary: premium_itinerary_tanzania,
+        //itinerary: premium_itinerary_tanzania,
         kit: custom_kit,
         price: ""
     }
- 
-
-    pack_basic_tanzania;
-    pack_premium_tanzania;
-    pack_basic_quenia;
-    pack_premium_quenia;  */
-    
-    var countrychoice = $('#menu-country option:selected').text();
-
-    console.log(countrychoice);
 
 
-
-
-
-
-
-
-
-
-
+    $("#menu-country").on("change", event => {
+        var countryChosen = event.target[event.target.selectedIndex].value;
+        console.log(countryChosen);
+        var teste = destination.filter(element => {
+            console.log(element);
+            if (countryChosen === element) {
+                console.log(element);
+                console.log(countryChosen);
+                return element;
+            }
+        })
+        console.log(teste);
+    })
 
 
 
