@@ -17,11 +17,15 @@ $(document).ready(function() {
     console.log(itinerary);
     
     itinerary.forEach(function(element) {
-        $('#itinerary').append('<div id="day'+ element.day +'" class="dayContainer"> <p>' + element.description + '</p> </div>');
-        console.log(typeof element.image);
-        
-            $('day'+ element.day).append('<div class="dayImage"><img src="' + element.image + '"></div>');
-        
+        $('#itinerary').append('<div id="day'+ element.day +'" class="dayContainer">  </div>');
+        console.log(element.description);
+        if (element.day % 2 === 1) {
+            $('#day'+ element.day).append('<div class="dayImage left"><img src="' + element.image + '"></div>');
+            $('#day'+ element.day).append('<div class="dayDesc right"> <p>' + element.description + '</p>></div>');
+        } else {
+            $('#day'+ element.day).append('<div class="dayImage right"><img src="' + element.image + '"></div>');
+            $('#day'+ element.day).append('<div class="dayDesc left"> <p>' + element.description + '</p>></div>');
+        }
 
     });
 
