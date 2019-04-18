@@ -154,6 +154,7 @@ $(document).ready(function () {
 
 
     $("#step2").on("click", function (event) {
+        event.preventDefault();
         customPackage = {
             country: $("#menu-country").val(),
             flight: $("#menu-flight").val(),
@@ -161,7 +162,10 @@ $(document).ready(function () {
             food: $("#menu-food").val()
         }
         persist();
+    })
+    $("#step3").on("click", function (event) {
         event.preventDefault();
+        populateTable(item1_desc, item1_price);
     })
 
     function persist() {
@@ -192,18 +196,19 @@ $(document).ready(function () {
                 price += element.price;
                 console.log(price);
             }
-            console.log(item1_desc);
-            console.log(item1_price);
         })
         $(".itineraryChoice").html("<p><b>Total cost = € " + price + ",00</b></p>");
+
+  
 
 
     }
 
-
-        $("#1stCol").html(item1_desc);
-        $("#2ndCol").html(item1_price);
-
+    function populateTable(desc, price) {
+        console.log(desc, price);
+        $("#1stCol").html("t" + desc);
+        $("#2ndCol").html(price);
+    }
 
 
 
