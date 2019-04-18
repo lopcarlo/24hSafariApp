@@ -16,7 +16,15 @@ $(document).ready(function () {
 
             persist(name, email, phone, subject, message);
 
-            console.log("aqui");
+            $('#name').val("");
+            $('#email').val("");
+            $('#phone').val("");
+            $('#subject').val("");
+            $('#message').val("");
+
+
+        
+            
             event.preventDefault();
             
         });
