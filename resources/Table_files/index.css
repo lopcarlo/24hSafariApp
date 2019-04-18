@@ -1,0 +1,48 @@
+.home-image {
+  background-image: url("../resources/background/bg_home.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "Miama";
+  src: url("../resources/fonts/ZamenhofInverse.ttf");
+  }
+
+.home-text {
+  width: 650px;
+  text-align: center;
+  top: 25%;
+  position: relative;
+  left: 10%;
+  color: white;
+}
+
+.home-text h1{
+
+  font: bold 60px 'Miama';
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.home-text a{
+  margin: auto;
+  position: relative;
+  display: block;
+  margin-top: 15px;
+  font: bold 25px 'Lato';
+  text-decoration: none;
+  background-color: rgb(192, 168, 150);
+  color: rgb(213, 215, 228);
+  padding: 5px 6px;
+  box-shadow: 2px 2px 2px rgba(40, 40, 40, 0.4);
+  border-radius: 20px;
+  width:250px;
+}
+
+.home-text a:hover{
+  background-color: rgba(194, 127, 58, 0.4);
+}
