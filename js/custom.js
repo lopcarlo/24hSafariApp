@@ -149,6 +149,8 @@ $(document).ready(function () {
 
     var customPackage = {};
     var price;
+    var item1_desc;
+    var item1_price;
 
 
     $("#step2").on("click", function (event) {
@@ -164,10 +166,12 @@ $(document).ready(function () {
 
     function persist() {
         destination.forEach(element => {
-            if(element.description === customPackage.country){
+            if (element.description === customPackage.country) {
                 price = element.price;
                 console.log(element.price);
             }
+            item1_desc = element.description;
+            item1_price = element.price;
         })
 
         flight_type_custom.forEach(element => {
@@ -177,20 +181,29 @@ $(document).ready(function () {
             }
         });
         days_available.forEach(element => {
-            if (element.description === customPackage.stay){
+            if (element.description === customPackage.stay) {
                 price += element.price;
                 console.log("elemenet" + element.price);
                 console.log("total" + price);
             }
         })
         food_type_custom.forEach(element => {
-            if (element.description === customPackage.food){
+            if (element.description === customPackage.food) {
                 price += element.price;
                 console.log(price);
             }
+            console.log(item1_desc);
+            console.log(item1_price);
         })
         $(".itineraryChoice").html("<p><b>Total cost = € " + price + ",00</b></p>");
+
+
     }
+
+
+        $("#1stCol").html(item1_desc);
+        $("#2ndCol").html(item1_price);
+
 
 
 
