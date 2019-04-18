@@ -207,7 +207,7 @@ $(document).ready(function () {
     function populateTable(desc, price) {
         console.log(desc, price);
         $("#1stCol").html("t" + desc);
-        $("#2ndCol").html(price);
+        $("#3stCol").html(price);
     }
 
 
