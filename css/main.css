@@ -11,6 +11,7 @@
   .fakeNav {
     height: 60px;
     widows: 100%;
+    margin-bottom: 20px;
   }
   
   .navbar a {
@@ -66,4 +67,20 @@
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right{
+    float: right;
+  }
+
+  .center {
+    margin: auto;
+  }
+
+  .textCenter {
+    text-align: center;
   }

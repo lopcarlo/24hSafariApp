@@ -10,10 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/pack.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     </script>
     <script src="../js/pack.js"></script>
 
@@ -21,23 +18,60 @@
 
 <body>
     <div class="fakeNav"></div>
-        <div class="navbar">
-                <a href="./index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Tours
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Tanzania</a>
-                        <a href="#">Quenia</a>
-                    </div>
-                </div>
-                <a href="about/about.html">About Us</a>
-        
-                <a href="about/contact.html">Contact</a>
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tours
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tanzania</a>
+                <a href="#">Quenia</a>
             </div>
+        </div>
+        <a href="about/about.html">About Us</a>
 
-    <h1 id="packName"></h1>
+        <a href="about/contact.html">Contact</a>
+    </div>
+
+    <div id="packDescription">
+
+        <div class="container">
+            <div class="map left">
+                <div class="basicQueniaMap">
+                    <p>oi</p>
+                </div>
+                <div class="premiumQueniaMap">
+                </div>
+
+                <div class="basicQueniaMap">
+                </div>
+
+                <div class="premiumQueniaMap">
+                </div>
+            </div>
+            <div class="dayList right">
+                <ul>
+                    <li>day 1</li>
+                    <li>day 2</li>
+                    <li>day 3</li>
+                    <li>day 4</li>
+                    <li>day 5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="description">
+            <h2 id="packName" class="textCenter"></h2>
+            <p id="packDescriptionText"></p>
+        </div>
+    </div>
+
+    <div id="itinerary"></div>
+
+
+
+
 </body>
 
 </html>
