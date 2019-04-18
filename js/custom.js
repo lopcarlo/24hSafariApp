@@ -130,7 +130,7 @@ $(document).ready(function () {
     ];
 
 
-/*
+
     var pack_custom = {
         destination: destination,
         name: safari_custom_name,
@@ -143,21 +143,52 @@ $(document).ready(function () {
         price: ""
     }
 
+    var customPackage = {};
+    var price;
+    
 
-    $("#menu-country").on("change", event => {
-        var countryChosen = event.target[event.target.selectedIndex].value;
-        console.log(countryChosen);
-        var teste = destination.filter(element => {
-            console.log(element);
-            if (countryChosen === element) {
-                console.log(element);
-                console.log(countryChosen);
-                return element;
-            }
-        })
-        console.log(teste);
-    })
+    $("#step2").on("click", function(event) {
+        customPackage = {
+            country: $("#menu-country").val(),
+            flight: $("#menu-flight").val(),
+            stay: $("#menu-stay").val(),
+            food: $("#menu-food").val()
+        }
+        event.preventDefault();
+        console.log(customPackage);
+    }) 
 
+    flight_type_custom.forEach(element => {
+        console.log("description" + element.description);
+        console.log("flight:" + customPackage.flight);
+        if(element.description === customPackage.flight){
+            console.log("teste2");
+        }
+    });
+    if(customPackage.flight === flight_type_custom.description){
+        console.log("teste");
+        price = flight_type_custom.price;
+        console.log(flight_type_custom[0].price);
+    }
+
+
+
+    /*localStorage.setItem("custom_package", JSON.stringify(customPackage));
+    var custom = JSON.parse(localStorage.getItem("custom_package"));
+    console.log("object" + custom.flight);*/
+
+
+    /*flight_type_custom.forEach(element => {
+
+        console.log(customPackage.flight);
+        console.log(element.description);
+        if (element.description === customPackage.flight){
+            console.log(element.description);
+        }
+    });*/
+
+
+    
 
 
 });
